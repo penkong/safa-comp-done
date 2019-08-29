@@ -1,5 +1,5 @@
 <template>
-  <div>this is some thing for app . {{ msg }}</div>
+  <div>this is some thing for app . for test . will omit . {{ msg }}</div>
 </template>
 
 <script>

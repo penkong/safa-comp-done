@@ -1,3 +1,5 @@
+// packaging-sfc-for-npm with webpack this run all rollup
+// vue-cli-service build--target lib --name myLib [entry]
 import SafaGridView from './components/SafaGridView.vue';
 import Sth from './components/Sth.vue';
 
@@ -30,8 +32,4 @@ if (GlobalVue) {
 }
 
 Components.install = install;
-// Components.install = install;
 export default Components;
-
-// packaging-sfc-for-npm
-// vue-cli-service build--target lib --name myLib [entry]
