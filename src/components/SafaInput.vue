@@ -2,8 +2,8 @@
   <div class="safa-input">
     <!-- readonly counter -->
     <div class="label-container">
-      <label v-if="aligned" :for="idOfInput" class="label">{{ label }}</label>
-      <label v-else :for="idOfInput" class="left-label">{{ label }}</label>
+      <label v-if="aligned" :for="idOfInput" class="label" :style="{ right: -c + 'rem'}">{{ label }}</label>
+      <label v-else :for="idOfInput" class="left-label" :style="{ left: -c + 'rem'}">{{ label }}</label>
     </div>
     <div class="input-container">
       <q-input
@@ -125,6 +125,7 @@ export default {
     c: {
       // label
       type: String,
+      required: true,
       validator: v =>
         [
           "1",
@@ -183,14 +184,11 @@ export default {
       position: absolute;
       padding: 0 4px;
       bottom: -2rem;
-      right: -2.5rem;
     }
     & .left-label {
       position: absolute;
       padding: 0 4px;
       bottom: -2rem;
-      left: -2.5rem;
-      // background-color: blue;
     }
   }
   .input-container {
@@ -198,7 +196,6 @@ export default {
       text-align: right;
     }
     .q-field__control .relative-position {
-      // background-color: blue;
       padding: 0 px;
       display: flex;
       align-items: center;

@@ -1,20 +1,39 @@
 <template>
-  <q-page class="flex flex-center">
-    <SafaInput
-      :align="align"
-      :m="m"
-      :type="type"
-      :value="value"
-      :label="label"
-      :placeholder="placeholder"
-      :helper="helper"
-      :errorlabel="errorlabel"
-      :padding="padding"
-      :iconsize="iconsize"
-      :icon="icon"
-      :color="color"
-      :c="c"
-    />
+  <q-page style="width: 500px; margin: 0 auto;">
+    <div style="display: block;">
+      <SafaInput
+        :align="align"
+        :m="m"
+        :type="type"
+        :value="value"
+        :label="label"
+        :placeholder="placeholder"
+        :helper="helper"
+        :errorlabel="errorlabel"
+        :padding="padding"
+        :iconsize="iconsize"
+        :icon="icon"
+        :color="color"
+        :c="c"
+      />
+    </div>
+    <div>
+      <SafaInput
+        :align="align"
+        :m="m"
+        :type="type"
+        :value="value"
+        label="ایمیل"
+        placeholder="ایمیل"
+        :helper="helper"
+        :errorlabel="errorlabel"
+        :padding="padding"
+        :iconsize="iconsize"
+        :icon="icon"
+        :color="color"
+        :c="c"
+      />
+    </div>
   </q-page>
 </template>
 
@@ -29,7 +48,7 @@ export default {
   },
   data() {
     return {
-      align: "right",
+      align: "left",
       m: "e",
       id: "43434",
       type: "text",
