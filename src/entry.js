@@ -1,11 +1,21 @@
 // packaging-sfc-for-npm with webpack this run all rollup
 // vue-cli-service build--target lib --name myLib [entry]
+import SafaCheckBox from './components/SafaCheckBox.vue';
+import SafaComboBox from './components/SafaComboBox.vue';
+import SafaCommentBox from './components/SafaCommentBox.vue';
+import SafaDate from './components/SafaDate.vue';
 import SafaGridView from './components/SafaGridView.vue';
+import SafaInput from './components/SafaInput.vue';
 import Sth from './components/Sth.vue';
 
 const Components = {
-    Sth,
+    SafaCheckBox,
+    SafaComboBox,
+    SafaCommentBox,
+    SafaDate,
     SafaGridView,
+    SafaInput,
+    Sth
 };
 
 function install(Vue) {
