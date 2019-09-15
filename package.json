@@ -1,6 +1,6 @@
 {
     "name": "safa-grid-on-one",
-    "version": "0.1.14",
+    "version": "0.1.18",
     "private": false,
     "scripts": {
         "build": "npm run build:unpkg & npm run build:es & npm run build:umd",
